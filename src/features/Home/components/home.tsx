@@ -63,7 +63,7 @@ const Home: FC = () => {
       </section>
       <section id="newsletter">
         <Content>
-          <h2>Newsletter</h2>
+          <h2>Subscribe to our newsletter</h2>
           <p>
             If you're interested in AI, you should definitely subscribe to our
             biweekly newsletter. We'll send you the latest news in AI, as well
