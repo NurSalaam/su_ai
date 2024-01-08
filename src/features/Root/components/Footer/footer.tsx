@@ -8,6 +8,7 @@ import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import pattern from "../../../../assets/images/pattern.png";
+import su_logo from "../../../../assets/images/su_logo.png";
 
 const Footer: FC = () => {
   return (
@@ -16,13 +17,11 @@ const Footer: FC = () => {
       style={{ backgroundImage: `url(${pattern})`, backgroundRepeat: "repeat" }}
     >
       <div id="footer-items">
-        <div id="footer-actions">
-          <FooterItem label="Home" href={pages.root.path} />
-          <FooterItem label="Activities" href={pages.activities.path} />
-          <FooterItem label="About" href={pages.about.path} />
-          <FooterItem label="Contact" href={pages.contact.path} />
-          <FooterItem label="Newsletter" href={pages.newsletter.path} />
-        </div>
+        <img
+          className="footer-logo"
+          src={su_logo}
+          alt="Stellenbosch University Logo"
+        />
         <div id="social-and-copy-container">
           <div id="social-icons">
             <a

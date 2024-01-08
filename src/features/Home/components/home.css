@@ -56,6 +56,11 @@ h2 {
   gap: 1rem;
 }
 
+@media (max-width: 650px) {
+  #card-holder {
+    flex-direction: column;
+  }
+}
 /* card */
 .card {
   flex: 1;
