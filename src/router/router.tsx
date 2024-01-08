@@ -1,10 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
 import { pages } from "./routes";
+import Root from "../features/Root";
 
 export const router = createBrowserRouter([
   {
     path: pages.root.path,
-    element: <h1>Root</h1>,
+    element: <Root />,
     children: [
       { index: true, element: <h1>Home</h1> },
       {
