@@ -8,6 +8,11 @@ h3 {
   font-family: "Noto Serif", serif;
 } */
 
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -18,4 +23,15 @@ h1,
 h2,
 h3 {
   font-family: "Poppins", serif;
+}
+
+a {
+  transition: color 0.3s ease-in-out;
+  color: #62223b; /* Default color */
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  color: #b09262; /* Color when hovered */
 }

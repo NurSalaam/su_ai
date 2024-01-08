@@ -7,10 +7,14 @@ import "./footer.css";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import pattern from "../../../../assets/images/pattern.png";
 
 const Footer: FC = () => {
   return (
-    <footer id="footer">
+    <footer
+      id="footer"
+      style={{ backgroundImage: `url(${pattern})`, backgroundRepeat: "repeat" }}
+    >
       <div id="footer-items">
         <div id="footer-actions">
           <FooterItem label="Home" href={pages.root.path} />
