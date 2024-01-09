@@ -43,3 +43,44 @@
 #logo {
   max-height: 50px;
 }
+
+#menu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 1rem;
+}
+
+#menu:active {
+  transform: scale(1.2);
+  background-color: lightgrey;
+  border-radius: 5px;
+}
+@media (max-width: 650px) {
+  #nav-actions {
+    display: none;
+  }
+
+  #nav-items {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  #nav-actions.open {
+    flex-basis: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #nav-actions.open .nav-item {
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: #b09262 1px solid;
+  }
+
+  #menu {
+    display: block;
+  }
+}

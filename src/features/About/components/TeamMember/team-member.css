@@ -10,28 +10,30 @@
   padding: 1rem;
 }
 
-.team-member.left {
-  flex-direction: row;
-}
-
-.team-member.right {
-  flex-direction: row-reverse;
-}
-
 .team-member-image {
   width: 150px;
   height: 150px;
   object-fit: cover;
   border-radius: 50%;
+  order: 1; /* image is after the text */
 }
 
 .team-member-info {
   flex: 1;
+  order: 2; /* text is before the image */
 }
 
 @media (max-width: 650px) {
   .team-member {
     flex-direction: column;
     align-items: center;
+  }
+
+  .team-member-image {
+    order: 1; /* image is before the text */
+  }
+
+  .team-member-info {
+    order: 2; /* text is after the image */
   }
 }
