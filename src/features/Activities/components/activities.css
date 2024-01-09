@@ -3,33 +3,6 @@
   padding: 0;
 }
 
-#hero {
-  position: relative;
-  padding: 2rem;
-  background: rgba(255, 255, 255, 0.1); /* semi-transparent white background */
-  backdrop-filter: blur(20px); /* larger blur amount */
-  overflow: hidden; /* hides the pseudo-element outside the #hero section */
-  color: white;
-}
-
-#hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, #b09262 0%, #62223b 100%);
-  z-index: -1; /* places the pseudo-element behind the content of the #hero section */
-}
-#hero h1 {
-  color: white;
-  font-size: 3rem;
-  line-height: 1.5;
-  letter-spacing: 0.05em;
-  font-family: Poppins, sans-serif;
-}
-
 h2 {
   font-family: Poppins, serif;
 }

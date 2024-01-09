@@ -2,6 +2,7 @@ import React, { FC, useState } from "react";
 import Content from "../../../components/content";
 import "./activities.css";
 import Divider from "../../../components/divider";
+import Hero from "../../../components/Hero";
 
 const mockEvents: Activity[] | null = [
   {
@@ -32,12 +33,10 @@ const Activities: FC = () => {
 
   return (
     <div id="activities-page">
-      <section id="hero">
-        <Content>
-          <h1 id="hero-text">Activities</h1>
-          <h2>Join us at our events, or work on one of our projects.</h2>
-        </Content>
-      </section>
+      <Hero
+        title="Activities"
+        subheading="Join us at one of our events, or work with us on a project"
+      />
       {/* <Divider height="10px" /> */}
       <Content>
         <div id="tab-selector">

@@ -4,17 +4,12 @@ import Content from "../../../components/content";
 import pattern from "../../../assets/images/pattern.png";
 import { Link } from "react-router-dom";
 import { pages } from "../../../router/routes";
+import Hero from "../../../components/Hero";
 
 const Home: FC = () => {
   return (
     <div id="home-page">
-      <section id="hero">
-        <Content>
-          <h1 id="hero-text">
-            Welcome to the Stellenbosch University AI Society
-          </h1>
-        </Content>
-      </section>
+      <Hero title="Welcome to the Stellenbosch University AI Society" />
       <section id="description">
         <Content>
           <h2>We're living through exciting times. Let's explore together.</h2>
