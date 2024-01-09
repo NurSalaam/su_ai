@@ -3,7 +3,8 @@ import { pages } from "./routes";
 import Root from "../features/Root";
 import Home from "../features/Home";
 import Activities from "../features/Activities";
-import About from "../features/About/components/about";
+import About from "../features/About";
+import Contact from "../features/Contact";
 
 export const router = createBrowserRouter([
   {
@@ -17,7 +18,7 @@ export const router = createBrowserRouter([
       },
       {
         path: pages.contact.path,
-        element: <h1>Contact</h1>,
+        element: <Contact />,
       },
       {
         path: pages.newsletter.path,
