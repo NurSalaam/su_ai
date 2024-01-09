@@ -1,0 +1,86 @@
+#activities {
+  min-height: 100vh;
+  padding: 0;
+}
+
+#hero {
+  position: relative;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1); /* semi-transparent white background */
+  backdrop-filter: blur(20px); /* larger blur amount */
+  overflow: hidden; /* hides the pseudo-element outside the #hero section */
+  color: white;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #b09262 0%, #62223b 100%);
+  z-index: -1; /* places the pseudo-element behind the content of the #hero section */
+}
+#hero h1 {
+  color: white;
+  font-size: 3rem;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  font-family: Poppins, sans-serif;
+}
+
+h2 {
+  font-family: Poppins, serif;
+}
+
+#tab-selector {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tab {
+  flex-grow: 1;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+}
+
+.tab h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.tab:hover {
+  background-color: #f5f5f5;
+}
+
+/* card */
+.event-card {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.event-title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.event-date,
+.event-time,
+.event-location {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.event-description {
+  margin: 0;
+  font-size: 14px;
+}

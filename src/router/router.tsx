@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import { pages } from "./routes";
 import Root from "../features/Root";
 import Home from "../features/Home";
+import Activities from "../features/Activities";
 
 export const router = createBrowserRouter([
   {
@@ -23,7 +24,7 @@ export const router = createBrowserRouter([
       },
       {
         path: pages.activities.path,
-        element: <h1>Activities</h1>,
+        element: <Activities />,
       },
     ],
   },
