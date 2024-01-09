@@ -5,6 +5,7 @@ import Home from "../features/Home";
 import Activities from "../features/Activities";
 import About from "../features/About";
 import Contact from "../features/Contact";
+import Newsletter from "../features/Newsletter";
 
 export const router = createBrowserRouter([
   {
@@ -22,7 +23,7 @@ export const router = createBrowserRouter([
       },
       {
         path: pages.newsletter.path,
-        element: <h1>Newsletter</h1>,
+        element: <Newsletter />,
       },
       {
         path: pages.activities.path,
