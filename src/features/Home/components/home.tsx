@@ -7,7 +7,7 @@ import { pages } from "../../../router/routes";
 
 const Home: FC = () => {
   return (
-    <div id="home">
+    <div id="home-page">
       <section id="hero">
         <Content>
           <h1 id="hero-text">

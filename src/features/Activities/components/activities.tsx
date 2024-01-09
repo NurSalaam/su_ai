@@ -31,7 +31,7 @@ const Activities: FC = () => {
   const [tab, setTab] = useState(Tab.Events);
 
   return (
-    <div id="activities">
+    <div id="activities-page">
       <section id="hero">
         <Content>
           <h1 id="hero-text">Activities</h1>
