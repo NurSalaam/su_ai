@@ -13,7 +13,10 @@ const Navbar: FC = () => {
     <nav id="navbar">
       <div id="nav-items">
         <div id="nav-menu">
-          <img src={logo} alt="Logo" id="logo" />
+          <NavLink to={pages.root.path}>
+            <img src={logo} alt="Logo" id="logo" />
+          </NavLink>
+
           <MenuIcon id="menu" onClick={() => setOpen(!open)} />
         </div>
         <div id="nav-actions" className={open ? "open" : ""}>
