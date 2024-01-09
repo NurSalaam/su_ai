@@ -3,6 +3,7 @@ import { pages } from "./routes";
 import Root from "../features/Root";
 import Home from "../features/Home";
 import Activities from "../features/Activities";
+import About from "../features/About/components/about";
 
 export const router = createBrowserRouter([
   {
@@ -12,7 +13,7 @@ export const router = createBrowserRouter([
       { index: true, element: <Home /> },
       {
         path: pages.about.path,
-        element: <h1>About</h1>,
+        element: <About />,
       },
       {
         path: pages.contact.path,
